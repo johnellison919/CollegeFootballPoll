@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		
+		<script type="module" src="/js/TeamRankings.js"></script>
+	</head>
+	<body>
+		<%- include('includes/header') -%>
+		<main>
+			<h1>Ellison Computer Rankings (FBS)</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th></th>
+						<th>Team</th>
+						<th>Score</th>
+						<th>Trend</th>
+					</tr>
+				</thead>
+				<tbody id="team-rankings-container"></tbody>
+				<div style="display: none;" id="team-rankings-loader">
+					Loading...
+				</div>
+			</table>
+		</main>
+		<%- include('includes/footer') -%>	
+	</body>
+</html>
